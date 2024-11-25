@@ -44,6 +44,7 @@ fun Details.Screen(
     showGroups: Boolean = true
 ) {
     val list = detailsManager.list
+    if (list.isEmpty()) return
     val selectedGroup = detailsManager.selectedGroup
     TwoPanelLayoutInnerScroll(
         padding = 0.dp,
