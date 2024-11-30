@@ -95,7 +95,7 @@ private fun Item(
 @Composable
 private fun Header(
     headerImage: @Composable BoxScope.() -> Unit = {},
-    title: String = "TEST_TITLE_JDFJFKJFKDJFJF#$(994039409"
+    title: String = "TEST_TITLE"
 ) {
     val height = LocalWindowHeight.current
     val adaptiveImageWidth = remember {
