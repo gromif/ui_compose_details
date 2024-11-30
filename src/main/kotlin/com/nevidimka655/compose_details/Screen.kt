@@ -1,5 +1,6 @@
 package com.nevidimka655.compose_details
 
+import android.content.Context
 import androidx.compose.foundation.background
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
@@ -20,7 +21,7 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -43,6 +44,7 @@ fun Details.Screen(
     headerImage: @Composable BoxScope.() -> Unit = {},
     showGroups: Boolean = true
 ) {
+    val context = LocalContext.current
     val list = detailsManager.list
     if (list.isEmpty()) return
     val selectedGroup = detailsManager.selectedGroup
@@ -54,6 +56,7 @@ fun Details.Screen(
                 title = detailsManager.title
             )
             if (showGroups) Groups(
+                context = context,
                 list = list,
                 selectedGroup = selectedGroup ?: list[0],
                 onGroupSelected = {
@@ -61,16 +64,16 @@ fun Details.Screen(
                 }
             )
         }, right = {
-            ListGroupItems(items = (selectedGroup ?: list[0]).items)
+            ListGroupItems(context = context, items = (selectedGroup ?: list[0]).items)
         })
 }
 
 @Composable
-private fun ListGroupItems(items: List<DetailsItem>) = items.forEach {
+private fun ListGroupItems(context: Context, items: List<DetailsItem>) = items.forEach {
     Item(
         icon = it.icon.imageVector,
-        title = it.title.text ?: stringResource(id = it.title.id!!),
-        summary = it.summary.text ?: stringResource(id = it.summary.id!!)
+        title = it.title.resolve(context),
+        summary = it.summary.resolve(context)
     )
 }
 
@@ -143,6 +146,7 @@ private fun HeaderTitle(title: String, padding: Dp = 30.dp) = Text(
 
 @Composable
 private fun Groups(
+    context: Context,
     list: SnapshotStateList<DetailsGroup>,
     selectedGroup: DetailsGroup,
     onGroupSelected: (DetailsGroup) -> Unit
@@ -156,7 +160,7 @@ private fun Groups(
         Chips.Filter(
             selected = it == selectedGroup,
             onClick = { onGroupSelected(it) },
-            label = it.name.text ?: stringResource(id = it.name.id!!)
+            label = it.name.resolve(context)
         )
     }
 }
