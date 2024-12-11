@@ -14,7 +14,6 @@ class DetailsManager {
     val list = mutableStateListOf<DetailsGroup>()
     var title by mutableStateOf("")
     var selectedGroup by mutableStateOf<DetailsGroup?>(null)
-    var extras: Bundle? = null
 
     fun addGroup(
         name: TextWrap,
