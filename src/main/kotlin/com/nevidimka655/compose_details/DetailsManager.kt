@@ -1,6 +1,5 @@
 package com.nevidimka655.compose_details
 
-import android.os.Bundle
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
