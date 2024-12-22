@@ -1,6 +1,6 @@
 plugins {
     alias(libs.plugins.astracrypt.android.library)
-    alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.astracrypt.android.library.compose)
 }
 
 android {
@@ -8,11 +8,5 @@ android {
 
     defaultConfig {
         consumerProguardFiles("consumer-rules.pro")
-
-        buildFeatures.compose = true
     }
-}
-
-dependencies {
-    api(project(mapOf("path" to ":ui:compose-core")))
 }
