@@ -1,4 +1,4 @@
-package com.nevidimka655.compose_details.shared
+package io.gromif.compose.details.shared
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

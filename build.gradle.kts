@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.nevidimka655.compose_details"
+    namespace = "io.gromif.compose.details"
 
     defaultConfig {
         consumerProguardFiles("consumer-rules.pro")

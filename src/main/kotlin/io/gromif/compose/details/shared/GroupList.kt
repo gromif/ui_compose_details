@@ -1,4 +1,4 @@
-package com.nevidimka655.compose_details.shared
+package io.gromif.compose.details.shared
 
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
@@ -11,7 +11,7 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import com.nevidimka655.compose_details.model.DetailsGroup
+import io.gromif.compose.details.model.DetailsGroup
 import io.gromif.ui.compose.core.chips.Chips
 import io.gromif.ui.compose.core.chips.Filter
 import io.gromif.ui.compose.core.theme.spaces

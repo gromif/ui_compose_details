@@ -1,4 +1,4 @@
-package com.nevidimka655.compose_details
+package io.gromif.compose.details
 
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.runtime.Composable
@@ -9,12 +9,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.nevidimka655.compose_details.model.DetailsGroup
-import com.nevidimka655.compose_details.shared.DetailsList
-import com.nevidimka655.compose_details.shared.FakeData
-import com.nevidimka655.compose_details.shared.GroupList
-import com.nevidimka655.compose_details.shared.Header
-import com.nevidimka655.compose_details.shared.groups
+import io.gromif.compose.details.model.DetailsGroup
+import io.gromif.compose.details.shared.DetailsList
+import io.gromif.compose.details.shared.FakeData
+import io.gromif.compose.details.shared.GroupList
+import io.gromif.compose.details.shared.Header
+import io.gromif.compose.details.shared.groups
 import io.gromif.ui.compose.core.TwoPanelLayoutInnerScroll
 
 @Composable

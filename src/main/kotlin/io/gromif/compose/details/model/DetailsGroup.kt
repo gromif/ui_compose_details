@@ -1,4 +1,4 @@
-package com.nevidimka655.compose_details.model
+package io.gromif.compose.details.model
 
 import io.gromif.ui.compose.core.wrappers.TextWrap
 

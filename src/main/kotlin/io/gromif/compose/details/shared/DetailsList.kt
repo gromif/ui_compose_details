@@ -1,9 +1,9 @@
-package com.nevidimka655.compose_details.shared
+package io.gromif.compose.details.shared
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
-import com.nevidimka655.compose_details.model.DetailsItem
+import io.gromif.compose.details.model.DetailsItem
 import io.gromif.ui.compose.core.ColoredIconSecondary
 import io.gromif.ui.compose.core.TwoLineListItem
 
