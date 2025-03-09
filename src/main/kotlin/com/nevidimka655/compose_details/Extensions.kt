@@ -5,7 +5,7 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.nevidimka655.compose_details.model.DetailsGroup
 import com.nevidimka655.compose_details.model.DetailsItem
-import com.nevidimka655.ui.compose_core.wrappers.TextWrap
+import io.gromif.ui.compose.core.wrappers.TextWrap
 
 fun mutableDetailsStateList() = mutableStateListOf<DetailsGroup>()
 

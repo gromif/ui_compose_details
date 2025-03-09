@@ -1,7 +1,7 @@
 package com.nevidimka655.compose_details.model
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.nevidimka655.ui.compose_core.wrappers.TextWrap
+import io.gromif.ui.compose.core.wrappers.TextWrap
 
 data class DetailsItem(
     val icon: ImageVector,

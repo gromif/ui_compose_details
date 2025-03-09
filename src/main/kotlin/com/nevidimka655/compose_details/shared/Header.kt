@@ -17,10 +17,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.nevidimka655.ui.compose_core.ext.LocalWindowHeight
-import com.nevidimka655.ui.compose_core.ext.isCompact
-import com.nevidimka655.ui.compose_core.ext.isMedium
-import com.nevidimka655.ui.compose_core.theme.spaces
+import io.gromif.ui.compose.core.ext.LocalWindowHeight
+import io.gromif.ui.compose.core.ext.isCompact
+import io.gromif.ui.compose.core.ext.isMedium
+import io.gromif.ui.compose.core.theme.spaces
 
 @Composable
 internal fun Header(

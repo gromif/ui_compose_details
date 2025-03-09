@@ -12,9 +12,9 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import com.nevidimka655.compose_details.model.DetailsGroup
-import com.nevidimka655.ui.compose_core.chips.Chips
-import com.nevidimka655.ui.compose_core.chips.Filter
-import com.nevidimka655.ui.compose_core.theme.spaces
+import io.gromif.ui.compose.core.chips.Chips
+import io.gromif.ui.compose.core.chips.Filter
+import io.gromif.ui.compose.core.theme.spaces
 
 @Composable
 internal fun GroupList(

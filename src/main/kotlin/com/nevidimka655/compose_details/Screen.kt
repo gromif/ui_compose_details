@@ -15,7 +15,7 @@ import com.nevidimka655.compose_details.shared.FakeData
 import com.nevidimka655.compose_details.shared.GroupList
 import com.nevidimka655.compose_details.shared.Header
 import com.nevidimka655.compose_details.shared.groups
-import com.nevidimka655.ui.compose_core.TwoPanelLayoutInnerScroll
+import io.gromif.ui.compose.core.TwoPanelLayoutInnerScroll
 
 @Composable
 fun DetailsScreen(

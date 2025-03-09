@@ -4,8 +4,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import com.nevidimka655.compose_details.model.DetailsItem
-import com.nevidimka655.ui.compose_core.ColoredIconSecondary
-import com.nevidimka655.ui.compose_core.TwoLineListItem
+import io.gromif.ui.compose.core.ColoredIconSecondary
+import io.gromif.ui.compose.core.TwoLineListItem
 
 @Composable
 internal fun DetailsList(items: List<DetailsItem>) {
